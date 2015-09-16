@@ -16,6 +16,7 @@
 			display:block;
 			margin:auto;
 			width:50%;
+			height:50%;
 		}
 	
 	</style>
@@ -25,6 +26,7 @@
 
 	<header role="banner">
 		<h1>Emerson Fang's Dynamic Web Apps Portfolio</h1>
+			<img src="../images/emerson.png" alt="Emerson's Face" width="200" height="300" class="profile">
 			<nav role="navigation">
 			<ul>
 				<li>Project 1</li>
@@ -50,8 +52,6 @@
 			</ul>
 			</nav>
 	</header>
-
-	<img src="../images/emerson.png" alt="Emerson's Face" width="200" height="300" class="profile">
 
 	<h2>In 2+ sentences describe who you are and what you do.</h2>
 		<p>I am a mild-mannered guy.  By day, I am a research assistant in a science lab.  By night, I am a caped-crusader.  Just kidding.</p>
