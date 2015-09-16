@@ -59,22 +59,22 @@
 			<ul>
 				<li><h3>Project 1</h3></li>
 					<ul>
-						<li><a href="~/p1/index.php" title="Emerson's DWA-15 P1">View</a></li>
+						<li><a href="http://p1.emersonfang.me/" title="Emerson's DWA-15 P1">View</a></li>
 						<li><a href="https://github.com/emersonFang/portfolio/tree/master/p1" title="P1 Github Link">Github</a></li>
 					</ul>
 				<li><h3>Project 2</h3></li>
 					<ul>
-						<li><a href="~/p2/index.php" title="Emerson's DWA-15 P2">View</a></li>
+						<li><a href="http://p2.emersonfang.me/" title="Emerson's DWA-15 P2">View</a></li>
 						<li><a href="https://github.com/emersonFang/portfolio/" title="P2 Github Link">Github</a></li>
 					</ul>
 				<li><h3>Project 3</h3></li>
 					<ul>
-						<li><a href="~/p3/index.php" title="Emerson's DWA-15 P3">View</a></li>
+						<li><a href="http://p3.emersonfang.me/" title="Emerson's DWA-15 P3">View</a></li>
 						<li><a href="https://github.com/emersonFang/portfolio/" title="P3 Github Link">Github</a></li>
 					</ul>
 				<li><h3>Project 4</h3></li>
 					<ul>
-						<li><a href="~/p4/index.php" title="Emerson's DWA-15 P4">View</a></li>
+						<li><a href="http://p4.emersonfang.me/" title="Emerson's DWA-15 P4">View</a></li>
 						<li><a href="https://github.com/emersonFang/portfolio/" title="P4 Github Link">Github</a></li>
 					</ul>
 			</ul>
