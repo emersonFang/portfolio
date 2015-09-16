@@ -1,5 +1,6 @@
-#Project 1
+#DWA-15 Project 1
+Emerson Fang
 
-Sep 15, 2015
+Sep 16, 2015
 
-For DWA-15
+p1.emersonfang.me
