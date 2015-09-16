@@ -1,5 +1,3 @@
-<?php require_once('../images/emerson.png'); ?>
-
 <!DOCTYPE HTML>
 <html lang="en-US">
 
@@ -56,7 +54,7 @@
 
 	<header role="banner">
 		<h1>Emerson Fang's Dynamic Web Apps Portfolio</h1>	
-			<img src="emerson.png" alt="Emerson's Face" class="profile">
+			<img src="http://www.seas.harvard.edu/sites/default/files/styles/directory_large/public/images/Directory/efang.jpg?itok=d-Ar1_6t" alt="Emerson's Face" class="profile">
 			<nav role="navigation">
 			<ul>
 				<li><h3>Project 1</h3></li>
