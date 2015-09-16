@@ -26,7 +26,7 @@
 
 	<header role="banner">
 		<h1>Emerson Fang's Dynamic Web Apps Portfolio</h1>
-			<img src="../images/emerson.png" alt="Emerson's Face" width="200" height="300" class="profile">
+			<img src="../images/emerson.png" alt="Emerson's Face" class="profile">
 			<nav role="navigation">
 			<ul>
 				<li>Project 1</li>
