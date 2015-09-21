@@ -27,7 +27,10 @@ function password_logic() {
     else {
       //numWords
     for ($i = 1; $i <= htmlspecialchars($_POST["numWords"]); $i++) {
-          echo $word_list[$i-1];
+      if (isset($_POST["camelBool"])) //password has a number
+        {echo ucwords($word_list[$i-1]);} 
+      else {echo $word_list[$i-1];}
+
       if ($i < htmlspecialchars($_POST["numWords"])) {echo "-";}
 
     }

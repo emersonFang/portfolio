@@ -78,6 +78,10 @@ ini_set('display_errors', 1);
         <input type="checkbox" name="symbolBool" value="Yes" /> Yes
         <br>
 
+        CamelCase Your Password?
+        <input type="checkbox" name="camelBool" value="Yes" /> Yes
+        <br>
+
         <input type="submit" name="submit" value="Submit">
     </form>
   </div>
