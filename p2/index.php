@@ -35,6 +35,7 @@ ini_set('display_errors', 1);
   <h2>Generate a secure password:<h2>
     <p>
       <form method='POST' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
         <?php
         password_logic();
         ?>
@@ -56,14 +57,12 @@ ini_set('display_errors', 1);
 <?php echo count($word_list) ?>
 -->
         Include a number?
-        <input type="radio" name="numBool" value="Yes" /> Yes
-        <input type="radio" name="numBool" value="No" /> No
+        <input type="checkbox" name="numBool" value='Yes' /> Yes
         <br>
 
 
         Include a special symbol?
-        <input type="radio" name="symbolBool" value="Yes" /> Yes
-        <input type="radio" name="symbolBool" value="No" /> No
+        <input type="checkbox" name="symbolBool" value="Yes" /> Yes
         <br>
 
         <input type="submit" name="submit" value="Submit">

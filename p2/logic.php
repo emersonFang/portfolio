@@ -12,48 +12,35 @@ $word_list = Array(
     'hard'
     );
 
-    /*
-    $numbers = range(1, 20);
-    shuffle($numbers);
-    foreach ($numbers as $number) {
-    echo "$number ";
-
-    $words = $word_list[mt_rand(0, htmlspecialchars($_POST["numWords"]))];
-    var_dump($words);
-    var_dump($rand_keys);
-    //echo $word_list[$rand_keys[0]] . "\n";
-    //echo $word_list[$rand_keys[1]] . "\n";
-    }
-    */
-
+/* special characters */
+$str = '!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~';
 
 function password_logic() {
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
       global $word_list;
+      global $str;
       shuffle($word_list);
-      for ($i = 1; $i <= htmlspecialchars($_POST["numWords"]); $i++) {
+
+    $numWords = $_POST["numWords"];
+    if ($numWords=='') //user didn't enter a number for words
+      {echo "Please enter 1 to 10 for the number of words in your password.";}
+    else {
+      //numWords
+    for ($i = 1; $i <= htmlspecialchars($_POST["numWords"]); $i++) {
           echo $word_list[$i-1];
-        if ($i < htmlspecialchars($_POST["numWords"])) echo "-";
-      }
-    if ($_POST["numBool"]="Yes") echo rand(0,9);
+      if ($i < htmlspecialchars($_POST["numWords"])) {echo "-";}
+
+    }
+
+    if (isset($_POST["numBool"])) //password has a number
+      {echo rand(0,9);}
+
+    if (isset($_POST["symbolBool"])) //password has a symbol
+      {$randomChar = $str[rand(0, strlen($str)-1)];
+      echo $randomChar;}
+    }
+
+
     }
   }
-
-
-function test_numInput($number) {
-//http://stackoverflow.com/questions/16362058/php-form-numeric-validation
-  if(empty($number)) {
-      $msg = '<span class="error"> Please enter a value</span>';
-      echo $msg;
-  } else if(!ctype_digit($number)) {
-      $msg = '<span class="error"> Data entered was not numeric</span>';
-      echo $msg;
-  } else if(strlen($number) != 6) {
-      $msg = '<span class="error"> The number entered was not 6 digits long</span>';
-      echo $msg;
-  } else {
-      /* Success */
-  }
-}
-
 ?>
