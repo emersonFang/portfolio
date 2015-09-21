@@ -26,14 +26,11 @@ ini_set('display_errors', 1);
 
 <body>
 
-  <div class="container">
-
   	<header role="banner">
   		<h1>Emerson's xkcd-style Password Generator</h1>
   	</header>
 
-  <h2>Generate a secure password:<h2>
-    <p>
+    <h2>Generate a secure password:</h2>
       <form method='POST' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
         <?php
@@ -67,11 +64,8 @@ ini_set('display_errors', 1);
 
         <input type="submit" name="submit" value="Submit">
     </form>
-</p>
 
-    <h2>Inspired by xkcd:<h2> <img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd password comic" class="comic">
-
-
-  </div>
+    <h2>Inspired by xkcd:</h2>
+    <img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd password comic" class="comic">
 
 </html>
