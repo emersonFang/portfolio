@@ -18,6 +18,14 @@ ini_set('display_errors', 1);
       text-align: center;
     }
 
+    .container {
+			width:75%;
+      padding: 5%;
+			min-width:800px;
+			margin:auto;
+      text-align:center;
+    }
+
 	</style>
 
   <?php require 'logic.php'; ?>
@@ -31,6 +39,8 @@ ini_set('display_errors', 1);
   	</header>
 
     <h2>Generate a secure password:</h2>
+
+    <div class="container">
       <form method='POST' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
         <?php
@@ -64,8 +74,10 @@ ini_set('display_errors', 1);
 
         <input type="submit" name="submit" value="Submit">
     </form>
+  </div>
 
     <h2>Inspired by xkcd:</h2>
-    <img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd password comic" class="comic">
-
+      <div class="container">
+        <img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd password comic" class="comic">
+      </div>
 </html>
