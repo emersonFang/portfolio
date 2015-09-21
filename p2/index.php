@@ -18,12 +18,18 @@ ini_set('display_errors', 1);
       text-align: center;
     }
 
+    h2 {
+      padding:2%;
+    }
+
     .container {
 			width:75%;
-      padding: 5%;
+      padding: 2.5%;
 			min-width:800px;
 			margin:auto;
       text-align:center;
+      font-size: 20px;
+      font-weight: bold;
     }
 
 	</style>
