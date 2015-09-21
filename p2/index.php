@@ -32,17 +32,31 @@ ini_set('display_errors', 1);
   		<h1>Emerson's xkcd-style Password Generator</h1>
   	</header>
 
-  <h2>Generate a secure password<h2>
+  <h2>Generate a secure password:<h2>
     <p>
       <form method='POST' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        password_logic();
 
-        }
+          /*
+          $numbers = range(1, 20);
+          shuffle($numbers);
+          foreach ($numbers as $number) {
+          echo "$number ";
+
+          $words = $word_list[mt_rand(0, htmlspecialchars($_POST["numWords"]))];
+          var_dump($words);
+          var_dump($rand_keys);
+          //echo $word_list[$rand_keys[0]] . "\n";
+          //echo $word_list[$rand_keys[1]] . "\n";
+          }
+          */
         ?>
 
+        <br>
+        <br>
         Number of words
-        <input type='number' name='numWords' min='1' max='<?php echo count($word_list) ?>' >
+        <input type='number' name='numWords' min='1' max='10' >
         <br>
 
 
@@ -53,6 +67,7 @@ ini_set('display_errors', 1);
 <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
 <?php } ?>
 </select>
+<?php echo count($word_list) ?>
 -->
         Include a number?
         <input type="radio" name="numBool" value="Yes" /> Yes
