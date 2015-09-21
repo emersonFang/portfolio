@@ -37,25 +37,11 @@ ini_set('display_errors', 1);
       <form method='POST' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <?php
         password_logic();
-
-          /*
-          $numbers = range(1, 20);
-          shuffle($numbers);
-          foreach ($numbers as $number) {
-          echo "$number ";
-
-          $words = $word_list[mt_rand(0, htmlspecialchars($_POST["numWords"]))];
-          var_dump($words);
-          var_dump($rand_keys);
-          //echo $word_list[$rand_keys[0]] . "\n";
-          //echo $word_list[$rand_keys[1]] . "\n";
-          }
-          */
         ?>
 
         <br>
         <br>
-        Number of words
+        Number of words (1-10):
         <input type='number' name='numWords' min='1' max='10' >
         <br>
 
