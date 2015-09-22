@@ -19,6 +19,7 @@ ini_set('display_errors', 1);
     }
 
     h2 {
+			text-align: center;
       padding:2%;
     }
 
