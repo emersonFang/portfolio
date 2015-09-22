@@ -59,7 +59,6 @@ ini_set('display_errors', 1);
         <input type='number' name='numWords' min='1' max='10' >
         <br>
 
-
 <!--
 <select name="word_num">
 <option value="Select number of words"></option>
@@ -69,6 +68,10 @@ ini_set('display_errors', 1);
 </select>
 <?php echo count($word_list) ?>
 -->
+        Include hyphens between words?
+        <input type="checkbox" name="hyphensBool" value='Yes' /> Yes
+        <br>
+
         Include a number?
         <input type="checkbox" name="numBool" value='Yes' /> Yes
         <br>
