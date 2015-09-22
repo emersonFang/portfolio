@@ -49,7 +49,8 @@ function password_logic() {
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
       global $emptyRemoved;
       global $str;
-      shuffle($emptyRemoved);
+
+      shuffle($emptyRemoved);//randomize the array everytime a user submits
 
     $numWords = $_POST["numWords"];
     if ($numWords=='') //user didn't enter a number for words
