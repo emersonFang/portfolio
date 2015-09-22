@@ -53,6 +53,8 @@ function password_logic() {
       shuffle($emptyRemoved);//randomize the array everytime a user submits
 
     $numWords = $_POST["numWords"];
+
+    echo '<font color="green">';
     if ($numWords=='') //user didn't enter a number for words
       {echo "Please enter 1 to 10 for the number of words in your password.";}
     else {
@@ -74,8 +76,7 @@ function password_logic() {
       {$randomChar = $str[rand(0, strlen($str)-1)];
       echo $randomChar;}
     }
-
-
+    echo '</font>';
     }
   }
 ?>

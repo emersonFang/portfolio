@@ -32,6 +32,17 @@ ini_set('display_errors', 1);
       font-weight: bold;
     }
 
+		.password-field {
+			width:75%;
+      padding: 2.5%;
+			min-width:800px;
+			margin:auto;
+      text-align:center;
+      font-size: 24px;
+      font-weight: bolder;
+			background-color: lightgrey;
+		}
+
 	</style>
 
   <?php require 'logic.php'; ?>
@@ -46,15 +57,15 @@ ini_set('display_errors', 1);
 
     <h2>Generate a secure password:</h2>
 
+		<div class="password-field">
+		<?php
+		password_logic();
+		?>
+		</div>
+
     <div class="container">
       <form method='POST' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-        <?php
-        password_logic();
-        ?>
-
-        <br>
-        <br>
         Number of words (1-10):
         <input type='number' name='numWords' min='1' max='10' >
         <br>
