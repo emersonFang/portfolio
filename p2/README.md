@@ -10,7 +10,7 @@ Generates an [xkcd style password].  The user can customize the password (i.e.
 number of words, whether there is a special character, hyphens, etc.).
 
 ##Demo
-
+http://screencast.com/t/UcqUFYVdocc
 
 ## Details for teaching team
 No login required.
