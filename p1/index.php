@@ -65,17 +65,17 @@
 				<li><h3>Project 2</h3></li>
 					<ul>
 						<li><a href="http://p2.emersonfang.me/" title="Emerson's DWA-15 P2">View</a></li>
-						<li><a href="https://github.com/emersonFang/portfolio/" title="P2 Github Link">Github</a></li>
+						<li><a href="https://github.com/emersonFang/p2" title="P2 Github Link">Github</a></li>
 					</ul>
 				<li><h3>Project 3</h3></li>
 					<ul>
 						<li><a href="http://p3.emersonfang.me/" title="Emerson's DWA-15 P3">View</a></li>
-						<li><a href="https://github.com/emersonFang/portfolio/" title="P3 Github Link">Github</a></li>
+						<li><a href="https://github.com/emersonFang/p3" title="P3 Github Link">Github</a></li>
 					</ul>
 				<li><h3>Project 4</h3></li>
 					<ul>
 						<li><a href="http://p4.emersonfang.me/" title="Emerson's DWA-15 P4">View</a></li>
-						<li><a href="https://github.com/emersonFang/portfolio/" title="P4 Github Link">Github</a></li>
+						<li><a href="https://github.com/emersonFang/p4" title="P4 Github Link">Github</a></li>
 					</ul>
 			</ul>
 			</nav>
